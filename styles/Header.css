@@ -62,10 +62,65 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    font-size: 20px;
 }
 
 .projects{
     background-color: gray;
+    width: 500px;             /* same width for both */
+    height: 300px;
     border-radius: 15px;
     padding: 15px;
+}
+
+.project-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-tools{
+    text-align: center;
+}
+
+.more-projects{
+    align-self: flex-end;
+}
+
+.projects-button{
+    background:transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.projects-button:hover{
+    text-decoration: underline;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box{
+    background-color: #e3f2fd;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-box{
+    background-color: #e3f2fd;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 10px;
 }
