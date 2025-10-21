@@ -29,3 +29,31 @@
     padding-right: 40px;
 }
 
+.introduction-container{
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.hello-conainer{
+    font-size: 50px;
+    width: 300px;
+    overflow-wrap: break-word;
+    padding-left: 50px;
+}
+
+.about-me-container{
+    background-color: gray;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+
+.about-me-container{
+    color: aliceblue;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    
+}
