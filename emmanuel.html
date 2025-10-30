@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi I'm Emmanuel</title>
     <link rel="stylesheet" href="styles/Header.css">
+    <link rel="stylesheet" href="styles/Homepage.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2a2f4f8d4.js" crossorigin="anonymous"></script>
 <body>
     <div class="header-container">
         <div class="header-button-container">
-            <button class="header-button">Home</button>
+            <button class="header-button active">Home</button>
         </div>
         <div class="header-button-container">
-            <button class="header-button">My work</button>
+            <a href="projects.html">
+                <button class="header-button">My work</button>
+            </a>
         </div>
         <div class="header-button-container">
             <button class="header-button">Contact</button>
@@ -23,23 +27,30 @@
     </div>
 
     <div class="introduction-container">
-        <div class="hello-container">
-            Hello, i'm
+        <div class="text-container">
+            <div class="hello-container">
+            Hello, My Name
+            </div>
+            <div class="hello-container">
+                is
+            </div>
+            <div class="name-container">
+                Emmanuel
+            </div>
+            <p class="short-des-container">
+                I’m a Computer Science major at The University of Texas at El Paso, 
+                passionate about coding and eager to build innovative solutions.
+            </p>
+            <div class="check-more-container">
+                <a href="https://github.com/Manny23V">
+                    <div class="check-more-box"><i class="fa-brands fa-github fa-lg" ></i> GitHub <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+                <a href="EmmanuelBarrazaResume.pdf" download="EmmanuelBarraza">
+                    <div class="check-more-box"><i class="fa-solid fa-circle-down fa-lg"></i> Download Resume <i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+            </div>
         </div>
-        <div class="name-container">
-            Emmanuel
-        </div>
-        <br>
-        <div class="short-des-container">
-            I’m a Computer Science major at The University of Texas at El Paso, 
-            passionate about coding and eager to build innovative solutions.
-        </div>
-        <div class="check-more-container">
-            <div class="check-more-box">GitHub</div>
-            <a href="EmmanuelBarrazaResume.pdf" download="EmmanuelBarraza">
-                <div class="check-more-box">Download Resume</div>
-            </a>
-        </div>
+        <img src="profile-portfolio.jpg" alt="Profile" class="profile-img">
     </div>
 
     <h1>About Me</h1>
@@ -48,18 +59,12 @@
         <div class = "text-about-me-container">
             <div>
                 I'm a undergraduate student at UTEP. 
-                Pursuing a career within the field of Computer Science.
-            </div>
-            <br>
-            <div>
+                Pursuing a career within the field of Computer Science. 
                 I enjoy tackling problems through critical thinking and thrive in 
                 collaborative environments where ideas and passion for technology 
-                are shared among everyone.
-            </div>
-            <br>
-            <div>
-                Currently, seeking internship opportunities where I can continue learning, 
-                strengthen my technical abilities, and contribute to innovative work.
+                are shared among everyone. Currently, seeking internship opportunities 
+                where I can continue learning, strengthen my technical abilities, 
+                and contribute to innovative work.
             </div>
         </div>
     </div>
@@ -71,6 +76,7 @@
             <div class="project-title">
                 Maze Game
             </div>
+            <img class="maze-game-img" src="maze-game.png" alt="">
             <br>
             <div class="project-summary">
                 Developed a terminal based game which player can
@@ -86,10 +92,11 @@
             <div class="project-title">
                 Wordle
             </div>
+            <img src="wordle-game.png" alt="">
             <br>
             <div class="project-summary">
                 Developed a terminal based game that replicates the
-                game of wordle.
+                game of wordle. Being able to pick from a list of words.
             </div>
             <br>
             <div class="project-tools">
@@ -107,12 +114,12 @@
     <h1>My Skills</h1>
 
     <div class="skills-container">
-        <div class="skill-box">Java</div>
-        <div class="skill-box">Python</div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">GIT</div>
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
+        <div class="skill-box"><i class="fa-brands fa-java fa-lg" style="color: rgb(49,230,240);"></i> Java</div>
+        <div class="skill-box"><i class="fa-brands fa-python fa-lg" style="color: rgb(49,230,240);"></i> Python</div>
+        <div class="skill-box"><i class="fa-brands fa-js fa-lg" style="color: rgb(49,230,240);"></i> JavaScript</div>
+        <div class="skill-box"><i class="fa-brands fa-git-alt fa-lg" style="color: rgb(49,230,240);"></i> GIT</div>
+        <div class="skill-box"><i class="fa-brands fa-html5 fa-lg" style="color: rgb(49,230,240);"></i> HTML</div>
+        <div class="skill-box"><i class="fa-brands fa-css3-alt fa-lg" style="color: rgb(49,230,240);"></i> CSS</div>
     </div>
 
     <h1>Contact Me</h1>
@@ -124,5 +131,6 @@
             <div class="contact-box">Linkedin</div>
         </a>
     </div>
+    <script src="home-page.js"></script>
 </body>
 </html>
