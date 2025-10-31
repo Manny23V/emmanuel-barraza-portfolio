@@ -25,6 +25,15 @@ h1{
     font-size: 20px;
 }
 
+.project-date{
+    text-align: left;
+    width: 75%;
+    line-height: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .project-summary{
     text-align: left;
     width: 75%;
@@ -69,6 +78,8 @@ h1{
     transition: 0.3s;
     color: rgb(49,230,240);
     background-color: rgb(49,230,240, 0.2);
+    transform: translateY(-5px); /* Moves the box up slightly */
+    box-shadow: 0 10px 20px rgba(49,230,240, 0.2);
 }
 
 .more-info-project{
