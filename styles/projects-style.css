@@ -1,8 +1,22 @@
 h1{
-    color: rgb(49,230,240);
+    color: rgb(190,200,209);
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    text-decoration: none;
+
+}
+
+.project-title{
+    text-decoration: underline rgb(49,230,240) 2.5px;
+    font-weight: bold;
+}
+
+.period {
+  color: #e12885;
+  text-decoration: none;
+  font-family: "Notable", sans-serif;
+  font-style: normal;
 }
 
 .introduction-to-projects{
@@ -18,28 +32,36 @@ h1{
     width: 90%;
     margin: 0 auto;
     line-height: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBottom 1s forwards;
 }
 
 .project-work-container{
     color: white;
     font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .project-date{
     text-align: left;
-    width: 75%;
+    width: 100%;
     line-height: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(190,200,209, 0.75);
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 1s forwards;
 }
 
 .project-summary{
     text-align: left;
-    width: 75%;
+    width: 100%;
     line-height: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 1s forwards;
 }
 
 .project-work-container img{       
@@ -47,7 +69,7 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 90%;
     border-radius: 20px;
     box-sizing: border-box;
     border-style: solid;
@@ -56,29 +78,37 @@ h1{
 
 .project-tools{
     display: flex;
+    justify-content: left;
     flex-wrap: wrap;
-    gap: 25px;
-    margin: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
+    row-gap: 20px;
+    column-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBottom 1s forwards;
 }
 
 .tool-box{
+    width: clamp(20px, 15vw, 200px);
     transition: 0.3s;
     background-color: rgb(49,230,240, 0.1);
     border-style: solid;
+    border-width: 1px;
     border-color: rgb(49,230,240);
     padding: 10px;
     border-radius: 20px;
     color: white;
-    font-size: 20px;
+    font-size: clamp(10px, 2vw, 20px);
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .tool-box:hover{
     transition: 0.3s;
     color: rgb(49,230,240);
     background-color: rgb(49,230,240, 0.2);
-    transform: translateY(-5px); /* Moves the box up slightly */
+    transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(49,230,240, 0.2);
 }
 
@@ -86,15 +116,50 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin-left: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .check-more-box{
-    color: rgb(49,230,240);
+    color: rgba(190,200,209);
     transition: 0.5s;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(190,200,209,0.1);
+    border-width: 1.5px;
+}
+
+.check-more-box i{
+    transition: 1s;
 }
 
 .check-more-box:hover{
     transition: 0.5s;
-    transform: translateX(20px);
+    padding-right: 15px;
+}
+
+.check-more-box:hover i:last-child{
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+
+.check-more-box:hover i:first-child{
+    transition: 0.5s;
+    color: rgb(49,230,240, 0.2);
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeInBottom {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

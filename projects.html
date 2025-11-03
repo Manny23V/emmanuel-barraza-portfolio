@@ -6,11 +6,16 @@
     <title>My Projects</title>
     <link rel="stylesheet" href="styles/Header.css">
     <link rel="stylesheet" href="styles/projects-style.css">
+    <link rel="stylesheet" href="styles/bottom-header.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b2a2f4f8d4.js" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
 </head>
 <body>
     <div class="header-container">
+        <div class="header-name">
+            <span style="color: rgb(19,122,127);">E</span>mmanuel
+        </div>
         <nav class="header-navigate">
             <div class="header-button-container">
                 <a href="emmanuel.html">
@@ -23,18 +28,22 @@
                 </a>
             </div>
             <div class="header-button-container">
-                <button class="header-button">Contact</button>
+                <a href="contact.html">
+                    <button class="header-button">Contact</button>
+                </a>
             </div>
-            <div class="header-button-container">
-                <button class="header-button">Resume</button>
-            </div>
-
             <span class="underline"></span>
         </nav>
+
+        <div class="resume-link">
+            <a href="EmmanuelBarrazaResume.pdf" download="EmmanuelBarrazaResume">
+                <button class="header-resume-button">Resume <i class="las la-arrow-right"></i></button>
+            </a>
+        </div>
     </div>
 
     <div class="introduction-to-projects">
-        <h1>My Work</h1>
+        <h1><span class="project-title">My Work</span><span class="period">.</span></h1>
         <p class="work-summary">A showcase of the currect projects I have worked on so far in my years.
             Which each projects demonstrates my skills of the each technology used.
             More can be found in its GitHub Repository.
@@ -42,20 +51,20 @@
     </div>
 
     <div class="project-work-container">
-        <h1>Maze Game</h1>
+        <h1> <span class="project-title">Maze Game</span><span class="period">.</span></h1>
         <p class="project-date">April 2024</p>
         <p class="project-summary">Developed a terminal based game which player can travel through a maze to go to next level.
             Which a player choses among 3 files, which the files read and stored through a 2d array.
             Player move counts are counted providing the player with thier move count at the end and see of they got
             a high score.
         </p>
-        <img src="maze-game.png" alt="">
+        <img src="images/maze-game.png" alt="">
         <div class="project-tools">
             <div class="tool-box">Java</div>
         </div>
         <div class="more-info-project">
-            <a href="https://github.com/Manny23V">
-                <div class="check-more-box"><i class="fa-brands fa-github fa-lg" ></i> GitHub <i class="fa-solid fa-arrow-right"></i></div>
+            <a href="https://github.com/Manny23V/maze-game">
+                <div class="check-more-box"><i class="fa-brands fa-github fa-lg" ></i> View on GitHub <i class="fa-solid fa-arrow-right"></i></div>
             </a>
         </div>
     </div>
@@ -63,7 +72,7 @@
     <br>
 
     <div class="project-work-container">
-        <h1>Wordle Game</h1>
+        <h1> <span class="project-title">Wordle Game</span><span class="period">.</span></h1>
         <p class="project-date">May 2024</p>
         <p class="project-summary">
             A Game based on the game of wordle, which was developed to be played within the terminal. The player is able to get over 2000 words
@@ -71,16 +80,50 @@
             typed is valid. 
 
         </p>
-        <img src="wordle-game.png" alt="">
+        <img src="images/wordle-game.png" alt="">
         <div class="project-tools">
             <div class="tool-box">Java</div>
         </div>
+    </div>
+
+    <br>
+
+    <div class="project-work-container" id="financial-guru">
+        <h1><span class="project-title">Financial Guru</span><span class="period">.</span></h1>
+        <p class="project-date">October 2025</p>
+        <p class="project-summary">
+            Financial Guru is a project that i was able create with a team of four within a AI Hackathon event. This project was develpoed in React by my team as a way 
+            to gamify investing and savings in order to people in a fun way. Which featured a simulated investing platform by utilizng 
+            LangChain within the backend that included also the use of Express.js and Node.js. It also feautered challanges, leaderboards, an implentation of a AI assistant to
+            to provide the user with financial advice by utilizing Hugginggace, and many more. We also utilized SupaBase in order to handle logins and signups within the website.
+
+        </p>
+        <img src="images/financial-guru.png" alt="">
+        <div class="project-tools">
+            <div class="tool-box">React</div>
+            <div class="tool-box">SupaBase</div>
+            <div class="tool-box">LangChain</div>
+            <div class="tool-box">TailwindCSS</div>
+            <div class="tool-box">Express.js</div>
+            <div class="tool-box">Node.js</div>
+        </div>
         <div class="more-info-project">
-            <a href="https://github.com/Manny23V">
-                <div class="check-more-box"><i class="fa-brands fa-github fa-lg" ></i> GitHub <i class="fa-solid fa-arrow-right"></i></div>
+            <a href="https://github.com/Manny23V/ai-hackathon-project">
+                <div class="check-more-box"><i class="fa-brands fa-github fa-lg" ></i> View on GitHub <i class="fa-solid fa-arrow-right"></i></div>
             </a>
         </div>
     </div>
+
+    <footer class="footer-container">
+        <div class="footer-left">
+            <span>© 2025 Emmanuel Barraza. All rights reserved.</span>
+        </div>
+
+        <div class="footer-right">
+            <a href="mailto:66manny501@email.com">Contact</a>
+        </div>
+    </footer>
+
     <script src="home-page.js"></script>
 </body>
 </html>

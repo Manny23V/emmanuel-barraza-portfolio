@@ -1,0 +1,107 @@
+body{
+    color: white;
+}
+
+.contact-me{
+    padding-left: 40px;
+    color: rgb(190,200,209);
+}
+
+.section-title{
+    text-decoration: underline rgb(49,230,240) 2.5px;
+    font-weight: bold;
+}
+
+.period {
+  color: #e12885;
+  text-decoration: none;
+  font-family: "Notable", sans-serif;
+  font-style: normal;
+}
+
+.introduction-contact{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.contact-intro-text{
+    width: 60%;
+    margin-left: 50px;
+    line-height: 40px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 1s forwards;
+}
+
+.contact-box {
+    background-color: rgba(128, 128, 128, 0.1);
+    border: solid rgb(49, 230, 240);
+    border-width: 1px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 550px; 
+    min-width: 250px; 
+    transition: all 0.3s ease;
+}
+
+.contact-box-text {
+    text-align: left;
+    font-size: clamp(14px, 2vw, 15px);
+}
+
+.more{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-box-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-box a {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-width: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-box a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon i {
+    font-size: clamp(18px, 3vw, 26px);
+    color: rgb(49, 230, 240);
+}
+
+.contact-text {
+    line-height: 0.2;
+}
+
+.contact-title {
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+.contact-link {
+    font-size: clamp(8px, 1.5vw, 13px);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
