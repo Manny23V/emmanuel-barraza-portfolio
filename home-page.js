@@ -8,52 +8,47 @@ function moveUnderline(button, customTop = null) {
     underline.style.width = `${rect.width}px`;
     underline.style.left = `${rect.left - navRect.left}px`;
 
-    // If customTop is provided (for Contact), move vertically
     if (customTop !== null) {
         underline.style.top = `${customTop}px`;
     } else {
-        underline.style.top = ''; // reset to default bottom
+        underline.style.top = '';
     }
 }
 
-// Move underline to the active button on load
 window.addEventListener('load', () => {
     const activeButton = document.querySelector('.header-button.active');
     if (activeButton) moveUnderline(activeButton);
 });
 
-// Animate underline on click then handle action
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {
-        e.preventDefault(); // prevent default action
+        e.preventDefault();
 
-        const link = button.closest('a'); // enclosing <a> if exists
+        const link = button.closest('a');
         const href = link ? link.href : null;
         const isDownload = link?.hasAttribute('download');
-        const action = button.dataset.action; // for Contact button
+        const action = button.dataset.action;
 
         document.querySelector('.header-button.active')?.classList.remove('active');
         button.classList.add('active');
 
-        // Handle underline movement
         if (action === 'scroll') {
-            // Move underline to bottom of page (example: 50px from bottom)
+
             moveUnderline(button, window.innerHeight - 50);
         } else {
-            moveUnderline(button); // normal movement
+            moveUnderline(button);
         }
 
-        // Handle after animation
         setTimeout(() => {
             if (action === 'scroll') {
                 const target = document.querySelector(button.dataset.target);
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
             } else if (isDownload) {
-                link.click(); // trigger download
+                link.click();
             } else if (href) {
                 window.location.href = href;
             }
-        }, 200); // match CSS transition duration
+        }, 200);
     });
 });
 
